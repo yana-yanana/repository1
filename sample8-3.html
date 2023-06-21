@@ -31,7 +31,7 @@
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(50, width / height);
         // カメラの初期座標を設定
-        camera.position.set(-30, 5, 5);
+        camera.position.set(-15, 5, 5);
 
         // カメラコントローラーを作成
         const controls = new THREE.OrbitControls(camera, document.body); 
@@ -69,63 +69,63 @@
         // 木1
         const sprite1 = new THREE.Sprite(material);
         sprite1.scale.set(1,2,1);
-        sprite1.position.set(1,1,0); //位置を指定
+        sprite1.position.set(0.5,1,0); //位置を指定
         scene.add(sprite1);
 
         // 木2
         const sprite2 = new THREE.Sprite(material);
         sprite2.scale.set(1,2,1);
-        sprite2.position.set(2,1,-0.75); //位置を指定
+        sprite2.position.set(1,1,-0.3); //位置を指定
         scene.add(sprite2);
 
         // 木3
         const sprite3 = new THREE.Sprite(material);
         sprite3.scale.set(1,2,1);
-        sprite3.position.set(2,1,0.75); //位置を指定
+        sprite3.position.set(1,1,0.3); //位置を指定
         scene.add(sprite3);
 
         // 木4
         const sprite4 = new THREE.Sprite(material);
         sprite4.scale.set(1,2,1);
-        sprite4.position.set(3,1,-1.5); //位置を指定
+        sprite4.position.set(1.5,1,-0.6); //位置を指定
         scene.add(sprite4);
         update();
 
         // 木5
         const sprite5 = new THREE.Sprite(material);
         sprite5.scale.set(1,2,1);
-        sprite5.position.set(3,1,0); //位置を指定
+        sprite5.position.set(1.5,1,0); //位置を指定
         scene.add(sprite5);
 
         // 木6
         const sprite6 = new THREE.Sprite(material);
         sprite6.scale.set(1,2,1);
-        sprite6.position.set(3,1,1.5); //位置を指定
+        sprite6.position.set(1.5,1,0.6); //位置を指定
         scene.add(sprite6);
 
         // 木7
         const sprite7 = new THREE.Sprite(material);
         sprite7.scale.set(1,2,1);
-        sprite7.position.set(4,1,-2.25); //位置を指定
+        sprite7.position.set(2,1,-0.9); //位置を指定
         scene.add(sprite7);
 
         // 木8
         const sprite8 = new THREE.Sprite(material);
         sprite8.scale.set(1,2,1);
-        sprite8.position.set(4,1,-0.75); //位置を指定
+        sprite8.position.set(2,1,-0.3); //位置を指定
         scene.add(sprite8);
         update();
 
         // 木9
         const sprite9 = new THREE.Sprite(material);
         sprite9.scale.set(1,2,1);
-        sprite9.position.set(4,1,0.75); //位置を指定
+        sprite9.position.set(2,1,0.3); //位置を指定
         scene.add(sprite9);
 
         // 木10
         const sprite10 = new THREE.Sprite(material);
         sprite10.scale.set(1,2,1);
-        sprite10.position.set(4,1,2.25); //位置を指定
+        sprite10.position.set(2,1,0.9); //位置を指定
         scene.add(sprite10);
         update();
         // 毎フレーム時に実行されるループイベントです
