@@ -14,8 +14,8 @@
 
       function init() {
         // サイズを指定
-        const width = 1000
-        const height = 800;
+        const width = 1500
+        const height = 1200;
 
         // レンダラーを作成
         var renderer = new THREE.WebGLRenderer();
@@ -31,7 +31,7 @@
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(50, width / height);
         // カメラの初期座標を設定
-        camera.position.set(0, 0, 5);
+        camera.position.set(0, 100, 5);
 
         // カメラコントローラーを作成
         const controls = new THREE.OrbitControls(camera, document.body); 
