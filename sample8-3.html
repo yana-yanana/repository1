@@ -83,6 +83,31 @@
         scene.add(sprite4);
         update();
 
+        // 木5
+        const sprite5 = new THREE.Sprite(material);
+        sprite5.scale.set(1,2,1);
+        sprite5.position.set(0.7,1,0.7); //位置を指定
+        scene.add(sprite5);
+
+        // 木6
+        const sprite6 = new THREE.Sprite(material);
+        sprite6.scale.set(1,2,1);
+        sprite6.position.set(-0.7,1,0.7); //位置を指定
+        scene.add(sprite6);
+
+        // 木7
+        const sprite7 = new THREE.Sprite(material);
+        sprite7.scale.set(1,2,1);
+        sprite7.position.set(-0.7,1,-0.7); //位置を指定
+        scene.add(sprite7);
+
+        // 木8
+        const sprite8 = new THREE.Sprite(material);
+        sprite8.scale.set(1,2,1);
+        sprite8.position.set(0.7,1,-0.7); //位置を指定
+        scene.add(sprite8);
+        update();
+
         // 毎フレーム時に実行されるループイベントです
         function update() {
           // レンダリング
