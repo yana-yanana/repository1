@@ -87,11 +87,11 @@
         }
 
         // 形状データを作成
-        const geometry = new THREE.BufferGeometry1();
-        geometry1.setAttribute1("position", new THREE.Float32BufferAttribute1(vertices, 3));
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
 
         // マテリアルを作成
-        const material = new THREE.PointsMaterial1({
+        const material = new THREE.PointsMaterial({
           // 一つ一つのサイズ
           size: 10,
           // 色
