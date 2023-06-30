@@ -71,7 +71,7 @@
 
       function createStarField1() {
         // 頂点情報を格納する配列
-        const vertices1 = [];
+        const vertices = [];
 
         // 配置する範囲
         const SIZE = 3000;
@@ -83,7 +83,7 @@
           const y = SIZE * (Math.random() - 0.5);
           const z = SIZE * (Math.random() - 0.5);
 
-          vertices1.push(x, y, z);
+          vertices.push(x, y, z);
         }
 
         // 形状データを作成
