@@ -325,7 +325,42 @@
         scene.add(mesh);
       }
 
+      // 星屑を作成します　緑８(カメラの動きをわかりやすくするため) ==================================================
+      createStarField8();
 
+      function createStarField8() {
+        // 頂点情報を格納する配列
+        const vertices = [];
+
+        // 配置する範囲
+        const SIZE = 1500;
+        // 配置する個数
+        const LENGTH = 300;
+
+        for (let i = 0; i < LENGTH; i++) {
+          const x = SIZE * (Math.random() - 0.5);
+          const y = SIZE * (Math.random() - 0.5);
+          const z = SIZE * (Math.random() - 0.5);
+
+          vertices.push(x, y, z);
+        }
+
+        // 形状データを作成
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
+
+        // マテリアルを作成
+        const material = new THREE.PointsMaterial({
+          // 一つ一つのサイズ
+          size: 10,
+          // 色
+          color: 0x008000,
+        });
+
+        // 物体を作成
+        const mesh = new THREE.Points(geometry, material);
+        scene.add(mesh);
+      }
 
       
       tick();
